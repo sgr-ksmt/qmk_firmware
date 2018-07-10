@@ -27,7 +27,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                        |      |      |       | Left | Right  |
  *                                 ,------|------|------|       |------+--------+------.
  *                                 |space |      |      |       |  Up  |        |Space |
- *                                 |   /  | \ |  |------|       |------|  = +   |  /   |
+ *                                 |   /  | Cmd  |------|       |------|  = +   |  /   |
  *                                 |  L1  |      |      |       | Down |        |  L2  |
  *                                 `--------------------'       `----------------------'
  *  N ... For thunderbird
@@ -45,7 +45,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         LT(MDIA,KC_NO), LT(SYMB,KC_NO), KC_LALT, KC_LGUI, KC_LANG2,
                                                        XXXXXXX, XXXXXXX,
                                                                 XXXXXXX,
-                                     LT(SYMB, KC_SPC), KC_BSLS, XXXXXXX,
+                                     LT(SYMB, KC_SPC), KC_LGUI, XXXXXXX,
         // right hand
              KC_BSLS, KC_6,   KC_7,     KC_8,    KC_9,    KC_0,    KC_MINS,
              KC_QUOT, KC_Y,   KC_U,     KC_I,    KC_O,    KC_P,    KC_BSPC,
@@ -54,7 +54,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                               KC_LANG1, KC_RGUI, KC_LBRC, KC_RBRC, LT(MDIA,KC_BSLS),
              KC_LEFT, KC_RIGHT,
              KC_UP,
-             KC_DOWN, KC_EQL,   KC_SPC
+             KC_DOWN, KC_EQL,   LT(MDIA, KC_SPC)
     ),
 /* Keymap 1: Symbol Layer
  *
