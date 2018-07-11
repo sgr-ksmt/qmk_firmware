@@ -24,11 +24,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *   | L2   |  L1  | Alt  | Cmd  | EISU |                                       | KANA | Cmd  | [  { | ]  } | L2 \ |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,---------------.
- *                                        |Hyper |      |       | Left | Right  |
+ *                                        |Hyper | Cut  |       | Left | Right  |
  *                                 ,------|------|------|       |------+--------+------.
- *                                 |space |      |      |       |  Up  |        |Enter |
- *                                 |   /  | Cmd  |------|       |------| RShift |  /   |
- *                                 |  L1  |      |      |       | Down |        |  L2  |
+ *                                 |space |      | Paste|       |  Up  |        |Enter |
+ *                                 |   /  |LShift|------|       |------| RShift |  /   |
+ *                                 | Cmd  |      | Copy |       | Down |        |  L1  |
  *                                 `--------------------'       `----------------------'
  *  N ... For thunderbird
  *  : ... In case ErgoDox EZ is detected as JIS keyboard
@@ -43,9 +43,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         CTL_T(KC_ESC),  KC_A,           KC_S,    KC_D,    KC_F,     KC_G,
         KC_LSFT,        KC_Z,           KC_X,    KC_C,    KC_V,     KC_B, KC_PLUS,
         LT(MDIA,KC_NO), LT(SYMB,KC_NO), KC_LALT, KC_LGUI, KC_LANG2,
-                                                  ALL_T(KC_NO), XXXXXXX,
-                                                                XXXXXXX,
-                                     LT(SYMB, KC_SPC), KC_LGUI, XXXXXXX,
+                                                  ALL_T(KC_NO), LGUI(KC_X),
+                                                                LGUI(KC_V),
+                                        GUI_T(KC_SPC), KC_LSFT, LGUI(KC_C),
         // right hand
              KC_BSLS, KC_6,   KC_7,     KC_8,    KC_9,    KC_0,    KC_MINS,
              KC_QUOT, KC_Y,   KC_U,     KC_I,    KC_O,    KC_P,    KC_BSPC,
@@ -54,7 +54,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                               KC_LANG1, KC_RGUI, KC_LBRC, KC_RBRC, LT(MDIA,KC_BSLS),
              KC_LEFT, KC_RIGHT,
              KC_UP,
-             KC_DOWN, KC_RSFT,  LT(MDIA, KC_ENT)
+             KC_DOWN, KC_RSFT,  LT(SYMB, KC_ENT)
     ),
 /* Keymap 1: Symbol Layer
  *
