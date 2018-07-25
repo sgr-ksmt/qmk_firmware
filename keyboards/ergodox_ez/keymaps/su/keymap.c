@@ -27,7 +27,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                        ,-------------.       ,---------------.
  *                                        |Hyper | Cut  |       | Left | Right  |
  *                                 ,------|------|------|       |------+--------+------.
- *                                 |space |      | Paste|       |  Up  |        |Enter |
+ *                                 |space |      | Paste|       |  Up  |        |Space |
  *                                 |   /  |LShift|------|       |------|   L2   |  /   |
  *                                 | Cmd  |      | Copy |       | Down |        |  L1  |
  *                                 `--------------------'       `----------------------'
@@ -44,7 +44,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LCTL,        KC_A,           KC_S,    KC_D,    KC_F,     KC_G,
         KC_LSFT,        KC_Z,           KC_X,    KC_C,    KC_V,     KC_B, KC_MINS,
         LT(MDIA,KC_NO), LT(SYMB,KC_NO), KC_LALT, KC_LGUI, KC_LANG2,
-                                                  ALL_T(KC_NO), LGUI(KC_X),
+                                                    LGSC(KC_V), LGUI(KC_X),
                                                                 LGUI(KC_V),
                                        LGUI_T(KC_SPC), KC_LSFT, LGUI(KC_C),
         // right hand
@@ -55,7 +55,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                               KC_LANG1, KC_RGUI, KC_LBRC, KC_RBRC, LT(MDIA,KC_BSLS),
              KC_LEFT, KC_RIGHT,
              KC_UP,
-             KC_DOWN, LT(MDIA, KC_NO), LT(SYMB, KC_ENT)
+             KC_DOWN, LT(MDIA, KC_NO), LT(SYMB, KC_SPC)
     ),
 /* Keymap 1: Symbol Layer
  *
