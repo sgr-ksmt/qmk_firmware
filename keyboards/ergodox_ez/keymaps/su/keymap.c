@@ -28,7 +28,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                        |Hyper | Cut  |       | Left | Right  |
  *                                 ,------|------|------|       |------+--------+------.
  *                                 |space |      | Paste|       |  Up  |        |Space |
- *                                 |   /  |LShift|------|       |------|   L2   |  /   |
+ *                                 |   /  |  \   |------|       |------|   L2   |  /   |
  *                                 | Cmd  |      | Copy |       | Down |        |  L1  |
  *                                 `--------------------'       `----------------------'
  *  N ... For thunderbird
@@ -46,7 +46,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         LT(MDIA,KC_NO), LT(SYMB,KC_NO), KC_LALT, KC_LGUI, KC_LANG2,
                                                     LGSC(KC_V), LGUI(KC_X),
                                                                 LGUI(KC_V),
-                                       LGUI_T(KC_SPC), KC_LSFT, LGUI(KC_C),
+                                       LGUI_T(KC_SPC), KC_BSLS, LGUI(KC_C),
         // right hand
              KC_BSLS, KC_6,   KC_7,     KC_8,    KC_9,    KC_0,    KC_MINS,
              KC_QUOT, KC_Y,   KC_U,     KC_I,    KC_O,    KC_P,    KC_BSPC,
